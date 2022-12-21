@@ -20,7 +20,7 @@ function onError(err) {
 async function onSuccess(position) {
   let lat = position.coords.latitude
   let lng = position.coords.longitude
-  const api_key = "e066154753bc4e2899182e5d4811b22a"
+  const api_key = "<buraya opencagedata api keyiniz gelecek>"
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lng}&key=${api_key}`
   const response = await fetch(url)
   const data = await response.json()
